@@ -115,6 +115,10 @@ function buildMaze(){
             warningNotice()
         }
 
+        if (j < 0){
+            j = 0;
+        }
+
         let newPlayerPosition = document.getElementById(`${i}${j}`);
         if(i > 10){
             newPlayerPosition = document.getElementById(`${i}a${j}`)
